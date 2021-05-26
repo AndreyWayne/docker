@@ -1,0 +1,36 @@
+2021-05-25 01:25:11.604 +05 [9178] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-05-25 01:25:11.605 +05 [9178] LOG:  listening on IPv6 address "::1", port 5432
+2021-05-25 01:25:11.605 +05 [9178] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-05-25 01:25:11.606 +05 [9178] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-05-25 01:25:11.609 +05 [9179] LOG:  database system was shut down at 2021-05-25 01:25:04 +05
+2021-05-25 01:25:11.612 +05 [9178] LOG:  database system is ready to accept connections
+2021-05-25 01:27:15.098 +05 [9190] ERROR:  syntax error at or near "CREATE" at character 41
+2021-05-25 01:27:15.098 +05 [9190] STATEMENT:  CREATE USER admin WITH PASSWORD 'admin'
+	CREATE USER admin WITH PASSWORD 'admin';
+2021-05-25 01:30:43.713 +05 [9265] FATAL:  database "andrejkolosov" does not exist
+2021-05-25 01:31:03.313 +05 [9270] FATAL:  database "andrejkolosov" does not exist
+2021-05-25 01:31:09.165 +05 [9272] FATAL:  database "andrejkolosov" does not exist
+2021-05-25 01:32:05.848 +05 [9290] FATAL:  database "andrejkolosov" does not exist
+2021-05-25 01:39:55.092 +05 [9372] ERROR:  must be member of role "andrejkolosov"
+2021-05-25 01:39:55.092 +05 [9372] STATEMENT:  ALTER TABLE public.person OWNER TO andrejkolosov;
+2021-05-25 01:39:55.094 +05 [9372] ERROR:  must be member of role "andrejkolosov"
+2021-05-25 01:39:55.094 +05 [9372] STATEMENT:  ALTER TABLE public.person_id_seq OWNER TO andrejkolosov;
+2021-05-25 01:39:55.096 +05 [9372] ERROR:  must be member of role "andrejkolosov"
+2021-05-25 01:39:55.096 +05 [9372] STATEMENT:  ALTER TABLE public.post OWNER TO andrejkolosov;
+2021-05-25 01:39:55.097 +05 [9372] ERROR:  must be member of role "andrejkolosov"
+2021-05-25 01:39:55.097 +05 [9372] STATEMENT:  ALTER TABLE public.post_id_seq OWNER TO andrejkolosov;
+2021-05-25 01:41:03.860 +05 [9412] FATAL:  database "app" does not exist
+2021-05-25 01:47:11.088 +05 [9394] ERROR:  role "admin" already exists
+2021-05-25 01:47:11.088 +05 [9394] STATEMENT:  create user admin with superuser password 'admin';
+2021-05-25 02:04:50.844 +05 [9178] LOG:  received smart shutdown request
+2021-05-25 02:04:50.846 +05 [9178] LOG:  background worker "logical replication launcher" (PID 9185) exited with exit code 1
+2021-05-25 02:04:50.846 +05 [9180] LOG:  shutting down
+2021-05-25 02:04:50.852 +05 [9178] LOG:  database system is shut down
+2021-05-25 17:30:56.459 +05 [5150] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-05-25 17:30:56.461 +05 [5150] LOG:  could not bind IPv6 address "::1": Address already in use
+2021-05-25 17:30:56.461 +05 [5150] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2021-05-25 17:30:56.461 +05 [5150] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2021-05-25 17:30:56.461 +05 [5150] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2021-05-25 17:30:56.461 +05 [5150] WARNING:  could not create listen socket for "localhost"
+2021-05-25 17:30:56.461 +05 [5150] FATAL:  could not create any TCP/IP sockets
+2021-05-25 17:30:56.462 +05 [5150] LOG:  database system is shut down
